@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+
+
+/* Style reset */
+*
+{
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: transparent;
+}
+
+
+/* Easy sizing with rem unit- always 10px */
+html
+{
+    font-size: 10px;
+}
