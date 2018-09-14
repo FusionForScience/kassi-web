@@ -19,6 +19,8 @@
     font-family: "yellowtail" , cursive;
     font-size: 15rem;
     word-spacing: 2rem;
+
+    text-shadow: .5rem .5rem #f7f7f7;
 }
 
 
@@ -87,8 +89,6 @@
     max-width: calc((100vw - 10rem) / 2);
     width: calc((100vw - 10rem) / 2);
     height: calc((100vw - 10rem) / 2);
-
-    /* width: 45rem; */
 }
 
 
@@ -122,10 +122,15 @@ footer
 {
     position: relative;
 
-    padding: 0 5rem;
     padding-top: 10rem;
 
     background-color: #d4d8dd;
+}
+
+
+footer > .section-paragraph , .credit > .section-paragraph
+{
+    margin: 0 5rem;
 }
 
 
@@ -134,7 +139,7 @@ footer
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
 
-    margin: 10rem auto;
+    margin: 10rem 5rem;
 
     padding: 10rem 5rem;
     background-color: #f7f7f7;
@@ -145,12 +150,16 @@ footer
 .icon-layout > a
 {
     text-align: center;
+    height: 10rem;
+    overflow: hidden;
+
+    margin: 0 auto;
 }
 
 
 .icon-layout > a > img
 {
-    height: 10rem;
+    height: 100%;
 }
 
 
@@ -166,10 +175,15 @@ footer
 }
 
 
-footer > img
+.end-splash
+{
+    margin-top: 10rem;
+}
+
+
+.end-splash > img
 {
     position: relative;
-    left: -5rem;
 
     object-fit: contain;
     width: 100vw;
@@ -185,6 +199,8 @@ footer > img
     font-family: "yellowtail" , cursive;
     font-size: 15rem;
     word-spacing: 2rem;
+
+    text-shadow: .5rem .5rem #f7f7f7;
 }
 
 
@@ -259,12 +275,140 @@ footer > img
 
         filter: grayscale(100%);
 
-        transition: .3s;
+        transition: .5s;
     }
 
 
     .photo-layout > img:hover
     {
         filter: grayscale(0%);
+    }
+
+
+    .involvement
+    {
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "text1 activities-block"
+            /* ". activities-block" */
+            "text2 activities-block";
+
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 13vw;
+        margin-right: 13vw;
+
+        grid-column-gap: 10rem;
+    }
+
+
+    .involvement > .section-header
+    {
+        grid-area: header;
+    }
+
+
+    #involvement-p1
+    {
+        grid-area: text1;
+    }
+
+
+    #involvement-p2
+    {
+        grid-area: text2;
+        vertical-align: bottom;
+    }
+
+
+    .involvement > ul 
+    {
+        grid-area: activities-block;
+
+        margin: 0;
+        padding: 5rem 10rem;
+    }
+
+
+    footer 
+    {
+        display: grid;
+        grid-template-areas: 
+            "end-splash paragraph1"
+            "end-splash icons"
+            "end-splash credit";
+
+        padding-top: 0;
+    }
+
+
+    footer > .section-header
+    {
+        display: none;
+    }
+
+
+    footer > .section-paragraph
+    {
+        margin-top: 10rem;
+        grid-area: paragraph1;
+    }
+
+
+    .icon-layout 
+    {
+        grid-area: icons;
+
+        height: 5rem;
+
+        padding: 5rem 0;
+
+        margin: 0 5rem;
+    }
+
+
+    .icon-layout > a 
+    {
+        height: 5rem;
+        overflow: hidden;
+
+        transition: .2s;
+    }
+
+
+    .icon-layout > a:hover
+    {
+        transform: scale(1.2);
+    }
+
+
+    .icon-layout > a > img
+    {
+        height: 100%;
+    }
+
+
+    .credit
+    {
+        grid-area: credit;
+    }
+
+
+    .end-splash
+    {
+        margin-top: 0;
+        grid-area: end-splash;
+    }
+
+
+    .end-splash > img
+    {
+        /* This moves the picture so that you can see Kassi */
+        position: relative;
+        right: 25vw;
+
+        object-fit: contain;
+        height: 100rem;
     }
 }
