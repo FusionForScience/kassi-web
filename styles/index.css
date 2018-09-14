@@ -24,12 +24,12 @@
 
 .intro
 {
-    margin: 0 5vw;
+    margin: 0 5rem;
     margin-top: 10rem;
 }
 
 
-.intro > h1
+.section-header
 {
     font-size: 10rem;
     text-align: center;
@@ -40,16 +40,132 @@
 }
 
 
-.intro > p
+.section-paragraph
 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     line-height: 7.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
 }
 
 
+.photos
+{
+    margin-top: 10rem;
+
+    padding: 10rem 5rem;
+
+    background-color: #d4d8dd;
+}
+
+
+.photo-layout
+{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+
+    margin-top: 10rem;
+}
+
+
+.photo-layout > img
+{
+    width: 45rem;
+}
+
+
+.involvement
+{
+    padding: 10rem 5rem;
+}
+
+
+.involvement > ul
+{
+    margin: 10rem 0;
+    padding: 5rem 0;
+
+    text-align: center;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: #d4d8dd;
+    border-radius: 2.5rem;
+}
+
+
+.involvement > ul > li
+{
+    margin: 5rem 0;
+}
+
+
 footer
 {
-    margin-top: 100rem;
+    position: relative;
+
+    padding: 0 5rem;
+    padding-top: 10rem;
+
+    background-color: #d4d8dd;
+}
+
+
+.icon-layout
+{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+
+    margin: 10rem auto;
+
+    padding: 10rem 5rem;
+    background-color: #f7f7f7;
+    border-radius: 2.5rem;
+}
+
+
+.icon-layout > a
+{
+    text-align: center;
+}
+
+
+.icon-layout > a > img
+{
+    height: 10rem;
+}
+
+
+.credit > h2
+{
+    margin-bottom: 10rem;
+}
+
+
+.credit > h2 > a
+{
+    color: #000000;
+    /* text-decoration: none; */
+}
+
+
+footer > img
+{
+    position: relative;
+    left: -5rem;
+
+    object-fit: contain;
+    width: 100vw;
+}
+
+
+.footer-img-text
+{
+    position: absolute;
+    bottom: 30rem;
+    left: 15rem;
+
+    font-family: "yellowtail" , cursive;
+    font-size: 15rem;
+    word-spacing: 2rem;
 }
