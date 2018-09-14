@@ -1,6 +1,6 @@
 #background-img
 {
-    z-index: -1;
+    position: relative;
 
     width: 100vw;
     height: 65vh;
@@ -24,8 +24,7 @@
 
 .intro
 {
-    margin: 0 5rem;
-    margin-top: 10rem;
+    position: relative;
 }
 
 
@@ -49,6 +48,19 @@
 }
 
 
+.intro > .intro-summary > .section-header
+{
+    margin-top: 10rem;
+}
+
+
+.intro > .intro-summary > .section-paragraph
+{
+    margin: 0 5rem;
+}
+
+
+
 .photos
 {
     margin-top: 10rem;
@@ -61,16 +73,22 @@
 
 .photo-layout
 {
-    display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     margin-top: 10rem;
+    margin-bottom: 5rem;
 }
 
 
 .photo-layout > img
 {
-    width: 45rem;
+    max-width: calc((100vw - 10rem) / 2);
+    width: calc((100vw - 10rem) / 2);
+    height: calc((100vw - 10rem) / 2);
+
+    /* width: 45rem; */
 }
 
 
@@ -145,7 +163,6 @@ footer
 .credit > h2 > a
 {
     color: #000000;
-    /* text-decoration: none; */
 }
 
 
@@ -168,4 +185,86 @@ footer > img
     font-family: "yellowtail" , cursive;
     font-size: 15rem;
     word-spacing: 2rem;
+}
+
+
+@media screen and (min-width: 1200px) 
+{
+    .intro
+    {
+        display: grid;
+
+        grid-template-columns: repeat(2 , 1fr);
+
+        height: 100vh;
+        
+    }
+
+
+    .intro-splash
+    {
+        overflow: hidden;
+    }
+
+
+    #background-img
+    {
+        height: 100%;
+        width: 50vw;
+    }
+
+
+    .main-img-text
+    {
+        top: 50vh;
+        left: 30vw;
+        right: auto;
+    }
+
+
+    .section-paragraph
+    {
+        font-size: 2rem;
+    }
+
+
+    .photos
+    {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
+
+    }
+
+
+    .photos > .section-paragraph
+    {
+        margin: 0 13vw;
+    }
+
+
+    .photo-layout
+    {
+        margin-bottom: 0;
+    }
+
+
+    .photo-layout > img 
+    {
+        max-width: 25%;
+        width: 25vw;
+        height: 25vw;
+
+        filter: grayscale(100%);
+
+        transition: .3s;
+    }
+
+
+    .photo-layout > img:hover
+    {
+        filter: grayscale(0%);
+    }
 }
