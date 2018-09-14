@@ -1,0 +1,55 @@
+#background-img
+{
+    z-index: -1;
+
+    width: 100vw;
+    height: 65vh;
+
+    object-fit: cover;
+}
+
+
+.main-img-text
+{
+    position: absolute;
+
+    top: 60rem;
+    right: 10rem;
+
+    font-family: "yellowtail" , cursive;
+    font-size: 15rem;
+    word-spacing: 2rem;
+}
+
+
+.intro
+{
+    margin: 0 5vw;
+    margin-top: 10rem;
+}
+
+
+.intro > h1
+{
+    font-size: 10rem;
+    text-align: center;
+    font-family: "yellowtail" , cursive;
+
+    margin-bottom: 10rem;
+    font-weight: normal;
+}
+
+
+.intro > p
+{
+    font-size: 3rem;
+    line-height: 7.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+
+
+footer
+{
+    margin-top: 100rem;
+}

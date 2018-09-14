@@ -5,11 +5,11 @@ header
     width: 100%;
     height: 10rem;
 
-    background-color: rgba(0 , 0 , 0 , 0);
+    background-color: #474A5A
 
-    border-bottom-color: gray;
+    /* border-bottom-color: gray;
     border-bottom-width: 3px;
-    border-bottom-style: solid;
+    border-bottom-style: solid; */
 }
 
 
@@ -45,9 +45,9 @@ header
 }
 
 
-#top-nav > ul > li > a
+#top-nav > ul > li > a:hover
 {
-    color: 
+    color: #E2AC5B;
 }
 
 
