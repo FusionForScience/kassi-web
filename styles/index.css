@@ -1,3 +1,16 @@
+.topic-section:nth-child(odd)
+{
+    background-color: #f7f7f7;
+}
+
+
+.topic-section:nth-child(even)
+{
+    background-color: #d4d8dd;
+}
+
+
+
 #background-img
 {
     position: relative;
@@ -24,7 +37,7 @@
 }
 
 
-.intro
+#intro
 {
     position: relative;
 }
@@ -50,26 +63,24 @@
 }
 
 
-.intro > .intro-summary > .section-header
+#intro > .intro-summary > .section-header
 {
     margin-top: 10rem;
 }
 
 
-.intro > .intro-summary > .section-paragraph
+#intro > .intro-summary > .section-paragraph
 {
     margin: 0 5rem;
 }
 
 
 
-.photos
+#photos
 {
     margin-top: 10rem;
 
     padding: 10rem 5rem;
-
-    background-color: #d4d8dd;
 }
 
 
@@ -92,13 +103,13 @@
 }
 
 
-.involvement
+#involvement
 {
     padding: 10rem 5rem;
 }
 
 
-.involvement > ul
+#involvement > ul
 {
     margin: 10rem 0;
     padding: 5rem 0;
@@ -112,7 +123,7 @@
 }
 
 
-.involvement > ul > li
+#involvement > ul > li
 {
     margin: 5rem 0;
 }
@@ -123,8 +134,6 @@ footer
     position: relative;
 
     padding-top: 10rem;
-
-    background-color: #d4d8dd;
 }
 
 
@@ -206,7 +215,7 @@ footer > .section-paragraph , .credit > .section-paragraph
 
 @media screen and (min-width: 1200px) 
 {
-    .intro
+    #intro
     {
         display: grid;
 
@@ -244,7 +253,7 @@ footer > .section-paragraph , .credit > .section-paragraph
     }
 
 
-    .photos
+    #photos
     {
         margin-top: 0;
         padding-left: 0;
@@ -255,7 +264,7 @@ footer > .section-paragraph , .credit > .section-paragraph
     }
 
 
-    .photos > .section-paragraph
+    #photos > .section-paragraph
     {
         margin: 0 13vw;
     }
@@ -285,7 +294,7 @@ footer > .section-paragraph , .credit > .section-paragraph
     }
 
 
-    .involvement
+    #involvement
     {
         display: grid;
         grid-template-areas: 
@@ -294,16 +303,14 @@ footer > .section-paragraph , .credit > .section-paragraph
             /* ". activities-block" */
             "text2 activities-block";
 
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 13vw;
-        margin-right: 13vw;
+        padding-left: 13vw;
+        padding-right: 13vw;
 
         grid-column-gap: 10rem;
     }
 
 
-    .involvement > .section-header
+    #involvement > .section-header
     {
         grid-area: header;
     }
@@ -322,7 +329,7 @@ footer > .section-paragraph , .credit > .section-paragraph
     }
 
 
-    .involvement > ul 
+    #involvement > ul 
     {
         grid-area: activities-block;
 
