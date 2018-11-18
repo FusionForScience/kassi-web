@@ -1,0 +1,96 @@
+.topic-section
+{
+    position: relative;
+    padding: 10rem 5rem;
+}
+
+
+
+.topic-section:nth-child(odd)
+{
+    background-color: #f7f7f7;
+}
+
+
+.topic-section:nth-child(even)
+{
+    background-color: #d4d8dd;
+}
+
+
+.section-header
+{
+    font-size: 10rem;
+    text-align: center;
+    font-family: "yellowtail" , cursive;
+
+    margin-bottom: 10rem;
+    font-weight: normal;
+}
+
+
+.section-paragraph
+{
+    font-size: 1.5rem;
+    line-height: 7.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+
+
+#signed-by
+{
+    position: absolute;
+    right: 5rem;
+}
+
+
+
+@media screen and (min-width: 1200px) 
+{
+    .section-paragraph
+    {
+        font-size: 2rem;
+    }
+
+
+    #photos
+    {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
+
+    }
+
+
+    #photos > .section-paragraph
+    {
+        margin: 0 13vw;
+    }
+
+
+    .photo-layout
+    {
+        margin-bottom: 0;
+    }
+
+
+    .photo-layout > img 
+    {
+        max-width: 25%;
+        width: 25vw;
+        height: 25vw;
+
+        filter: grayscale(100%);
+
+        transition: .5s;
+    }
+
+
+    .photo-layout > img:hover
+    {
+        filter: grayscale(0%);
+    }
+}
