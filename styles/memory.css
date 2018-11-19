@@ -45,6 +45,38 @@
 }
 
 
+.photo-layout 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.photo-layout > figure 
+{
+    max-width: calc((100vw - 10rem) / 2);
+}
+
+
+.photo-layout > figure > img
+{
+    max-width: calc((100vw - 10rem) / 2);
+    width: calc((100vw - 10rem) / 2);
+    height: calc((100vw - 10rem) / 2);
+
+    object-fit: cover;
+}
+
+
+.photo-paragraph
+{
+    font-size: 1.5rem;
+    line-height: 7.5rem;
+    font-family: "yellowtail" , cursive;
+    font-weight: 100;
+}
+
 
 @media screen and (min-width: 1200px) 
 {
