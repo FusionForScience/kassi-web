@@ -117,47 +117,6 @@
     }
 
 
-    #photos
-    {
-        margin-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
-
-
-    }
-
-
-    #photos > .section-paragraph
-    {
-        margin: 0 13vw;
-    }
-
-
-    .photo-layout
-    {
-        margin-bottom: 0;
-    }
-
-
-    .photo-layout > img 
-    {
-        max-width: 25%;
-        width: 25vw;
-        height: 25vw;
-
-        filter: grayscale(100%);
-
-        transition: .5s;
-    }
-
-
-    .photo-layout > img:hover
-    {
-        filter: grayscale(0%);
-    }
-
-
     .music-container
     {
         width: 45%;
