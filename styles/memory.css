@@ -109,6 +109,26 @@
 }
 
 
+footer
+{
+    position: relative;
+}
+
+
+#footer-id
+{
+    position: absolute;
+
+    top: 30rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #f7f7f7;
+}
+
+
 @media screen and (min-width: 1000px) 
 {
     .section-paragraph
